@@ -4,13 +4,19 @@ Texture Toolkit is an **Editor-only plugin**, not a runtime component for packag
 
 ## Requirements
 
-- **Unreal Engine 5.0.3** is the development target. Final release-package verification is still pending.
+- **Unreal Engine 5.6, 5.7 and 5.8** are the planned Windows release targets. **None is currently certified for release**; UE 5.8.4 is the development baseline.
 - **Windows x64**.
-- An Unreal-compatible **C++ build toolchain**, if the package requires compilation.
+- An Unreal-compatible **C++ build toolchain** only when installing/compiling from source; installing a matching precompiled Fab release package should not require compiling the plugin locally.
 - Unreal's **PythonScriptPlugin** and **EditorScriptingUtilities** plugins enabled.
 - A project in which you can install a project-level Editor plugin.
 
-Texture Toolkit bundles **Pillow 9.5.0** for Unreal's Python 3.9 environment. You do not need a separate standalone image-processing application.
+Texture Toolkit bundles **Pillow 9.5.0**. Development checks have exercised Python 3.11.8 on UE 5.7.4/5.8.4; UE 5.6 dependency compatibility remains unverified. You do not need a separate standalone image-processing application.
+
+## Fab packages versus manual source installation
+
+When a verified Fab Code Plugin release becomes available, Fab handles compilation for its selected UE versions. The publisher still validates the exact distributed package separately in every engine version claimed as compatible. **Do not treat a successful Fab build as proof of functional compatibility.** Consult [Compatibility & Limitations](compatibility.md) for current verification status.
+
+The steps below describe the **manual project-level installation** of a plugin package and are not a statement that a Fab release is already available.
 
 ## Install in a project
 
