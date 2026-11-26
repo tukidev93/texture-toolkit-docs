@@ -26,11 +26,11 @@ Texture Toolkit brings focused `Texture2D` operations into **Unreal Editor's Con
 
 | | |
 |---|---|
-| Unreal Engine | 5.0.3 |
+| Unreal Engine | 5.6–5.8 release targets (unverified) |
 | Platform | Windows x64 |
 | Type | Editor-only plugin |
 
-The plugin is implemented for **Unreal Engine 5.0.3, Windows x64**, but the latest distributable build still requires final end-to-end Editor certification. This documentation is a preview, not a claim of public release.
+Development baseline: **UE 5.8.4, Windows x64**. The planned UE 5.6–5.8 release targets still require version-specific build and interactive Editor verification of the shipped package. This documentation is a preview, not a public release or certified compatibility claim.
 
 </div>
 </div>
